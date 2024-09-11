@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Сосердоцкий](https://up.htmlacademy.ru/adaptive-individual/2/user/2490387).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://up.htmlacademy.ru/adaptive-individual/2/user/2490387).
 
 ---
 
