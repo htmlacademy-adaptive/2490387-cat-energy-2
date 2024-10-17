@@ -1,0 +1,17 @@
+.nav {
+  position: relative;
+}
+
+.nav__toggle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -45px;
+  right: 21px;
+  background: url("../../images/menu_mobile.svg") no-repeat center;
+  border: none;
+}
+
+.nav__main-menu {
+  display: none;
+}
