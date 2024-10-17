@@ -1,5 +1,13 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background: #ffffff url("../../images/logo-mobile-background.svg") no-repeat center 23px;
+  padding: 65px 0 0;
+  position: relative;
 }
+
+.header__logo {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+.header__nav {}
