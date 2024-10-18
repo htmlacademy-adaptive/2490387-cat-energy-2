@@ -8,10 +8,30 @@
   position: absolute;
   top: -45px;
   right: 21px;
-  background: url("../../images/menu_mobile.svg") no-repeat center;
+  background: url("../../images/burger-mobile.svg") no-repeat center;
   border: none;
+  display: none;
 }
 
-.nav__main-menu {
+.nav--closed .nav__toggle{
+  background-image: url("../../images/burger-mobile.svg");
+  display: block;
+}
+
+.nav--closed .nav__main-menu {
   display: none;
+  }
+
+.nav--opened .nav__toggle{
+  background-image: url("../../images/cross-mobile.svg");
+  display: block;
+}
+
+.nav--opened .nav__main-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
 }

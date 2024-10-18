@@ -2,6 +2,12 @@
   background: #ffffff url("../../images/logo-mobile-background.svg") no-repeat center 23px;
   padding: 65px 0 0;
   position: relative;
+  z-index: 20;
+
+  @media(min-width:$tablet ) {
+    background: none;
+  }
+
 }
 
 .header__logo {
