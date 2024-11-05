@@ -13,18 +13,50 @@
   display: none;
 }
 
-.nav--closed .nav__toggle{
+.nav--closed .nav__toggle {
   background-image: url("../../images/burger-mobile.svg");
   display: block;
+
+  @media(min-width:$tablet ) {
+    display: none;
+  }
+}
+
+.nav__main-menu {
+  margin: 0;
+
+  @media(min-width:$tablet ) {
+    display: flex;
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding-top: 30px;
+    gap: 26px;
+  }
 }
 
 .nav--closed .nav__main-menu {
   display: none;
-  }
 
-.nav--opened .nav__toggle{
+  @media(min-width:$tablet ) {
+    display: flex;
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding-top: 30px;
+    gap: 26px;
+  }
+}
+
+.nav--opened .nav__toggle {
   background-image: url("../../images/cross-mobile.svg");
   display: block;
+
+  @media(min-width:$tablet ) {
+    display: none;
+  }
 }
 
 .nav--opened .nav__main-menu {
@@ -34,4 +66,14 @@
   left: 0;
   width: 100%;
   background-color: #ffffff;
+
+  @media(min-width:$tablet ) {
+    display: flex;
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    justify-content: flex-end;
+    padding-top: 30px;
+    gap: 26px;
+  }
 }
