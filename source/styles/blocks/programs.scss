@@ -1,5 +1,9 @@
 .programs {
   margin: 0 20px;
+
+  @media(min-width: $tablet) {
+    margin: 0 30px;
+  }
 }
 
 .programs__list {
@@ -12,9 +16,49 @@
   background-color: #f2f2f2;
   padding: 24px 20px 18px;
   margin-bottom: 20px;
-}
+  position: relative;
 
-.programs__card {}
+  @media(min-width: $tablet) {
+    min-height: 372px;
+    box-sizing: border-box;
+    padding: 77px 314px 57px 54px;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $green;
+      position: absolute;
+      right: 63;
+      top: 92;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+    }
+    &--slim::after{
+      width: 140px;
+      height: 194px;
+      right: 93px;
+      top: 81px;
+      background-image: url("../../images/cat-slim.svg");
+    }
+
+    &--pro::after{
+      width: 268px;
+      height: 112px;
+      right: 29px;
+      top: 135px;
+      background-image: url("../../images/cat-pro.svg");
+    }
+  }
+}
 
 .programs__title {
   min-height: 45px;
@@ -44,6 +88,23 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+
+  }
+
+  @media(min-width: $tablet) {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -74,6 +135,15 @@
   border-bottom: 1px solid #000;
   padding-bottom: 22px;
   margin-bottom: 15px;
+
+  @media(min-width: $tablet) {
+    margin: 0 0 52px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+  }
 }
 
 .programs__link {
@@ -98,6 +168,17 @@
     background-position: right top;
     background-repeat: no-repeat;
     transition: width 0.3s ease-in-out;
+  }
+
+  @media(min-width: $tablet) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &::before {
+      left: calc(100% - 26px);
+      top: 9px;
+    }
   }
 }
 
