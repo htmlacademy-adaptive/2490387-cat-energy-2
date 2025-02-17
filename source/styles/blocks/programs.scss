@@ -10,6 +10,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media(min-width: $tablet) {}
+
+  @media(min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+  }
 }
 
 .programs__item {
@@ -18,11 +29,16 @@
   margin-bottom: 20px;
   position: relative;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media(min-width: $tablet) {
     min-height: 372px;
     box-sizing: border-box;
     padding: 77px 314px 57px 54px;
     margin-bottom: 30px;
+
 
     &::before {
       content: "";
@@ -42,7 +58,8 @@
       background-position: 0 0;
       background-size: cover;
     }
-    &--slim::after{
+
+    &--slim::after {
       width: 140px;
       height: 194px;
       right: 93px;
@@ -50,13 +67,17 @@
       background-image: url("../../images/cat-slim.svg");
     }
 
-    &--pro::after{
+    &--pro::after {
       width: 268px;
       height: 112px;
       right: 29px;
       top: 135px;
       background-image: url("../../images/cat-pro.svg");
     }
+  }
+
+  @media(min-width: $desktop) {
+    width: 570px;
   }
 }
 
@@ -132,7 +153,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d9d9d9;
   padding-bottom: 22px;
   margin-bottom: 15px;
 
