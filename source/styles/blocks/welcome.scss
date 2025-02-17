@@ -10,6 +10,50 @@
     box-sizing: border-box;
     background: url("../../images/index-can-tablet.jpg") no-repeat center bottom;
   }
+
+  @media(min-width:$desktop ) {
+    background: none;
+    padding: 0;
+    width: auto;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50%;
+      position: absolute;
+      right: 0;
+      height: calc(100% + 110px);
+      top: -110px;
+      background: #535257 url("../../images/index-background-desktop-cat.jpg") no-repeat top right;
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      width: 50%;
+      position: absolute;
+      right: 0;
+      height: calc(100% + 110px);
+      top: -110px;
+      background-color: $green;
+      z-index: 5;
+      opacity: 0.85;
+    }
+  }
+}
+
+.welcome__wrapper {
+  @media(min-width:$desktop ) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-right: 655px;
+    box-sizing: border-box;
+    padding-top: 114px;
+    padding-left: 80px;
+    min-height: 584px;
+    padding-bottom: 110px;
+  }
+
 }
 
 .welcome__block {
@@ -104,6 +148,11 @@
     width: auto;
     margin: 0 0 41px;
   }
+
+  @media(min-width:$desktop ) {
+    margin: 0 0 40px;
+
+  }
 }
 
 .welcome__text {
@@ -122,6 +171,11 @@
     line-height: 20px;
     width: auto;
     margin: 0 0 49px;
+  }
+
+  @media(min-width:$desktop ) {
+    margin: 0 0 52px;
+
   }
 }
 

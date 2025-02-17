@@ -4,6 +4,8 @@
 @import "./common/fonts.scss";
 @import "./common/visually-hidden.scss";
 
+@import "./components/section-title.scss";
+
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
@@ -11,3 +13,4 @@
 @import "./blocks/main-menu.scss";
 @import "./blocks/welcome.scss";
 @import "./blocks/programs.scss";
+@import "./blocks/service.scss";
