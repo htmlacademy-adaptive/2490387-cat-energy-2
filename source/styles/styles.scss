@@ -3,14 +3,34 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 @import "./common/visually-hidden.scss";
-
 @import "./components/section-title.scss";
+@import "./components/card.scss";
+@import "./components/inner-title.scss";
+@import "./components/detail.scss";
+@import "./components/more.scss";
+@import "./components/special-title.scss";
+@import "./components/button.scss";
+@import "./components/input.scss";
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/main.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/main-menu.scss";
 @import "./blocks/welcome.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/service.scss";
+@import "./blocks/statistic.scss";
+@import "./blocks/result.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/example.scss";
+@import "./blocks/invite.scss";
+@import "./blocks/map.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/extra.scss";
+@import "./blocks/simple-card.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/subscription.scss";

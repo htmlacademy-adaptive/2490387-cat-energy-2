@@ -2,7 +2,7 @@
   text-align: center;
   padding-bottom: 21px;
 
-  @media(min-width:$tablet ) {
+  @media (min-width: $tablet) {
     text-align: left;
     width: 709px;
     margin: 0 auto;
@@ -11,30 +11,31 @@
     background: url("../../images/index-can-tablet.jpg") no-repeat center bottom;
   }
 
-  @media(min-width:$desktop ) {
+  @media (min-width: $desktop) {
     background: none;
     padding: 0;
     width: auto;
-    margin: 0;
+    margin: 0 0 82px;
     position: relative;
 
     &::before {
       content: "";
       width: 50%;
       position: absolute;
-      right: 0;
       height: calc(100% + 110px);
       top: -110px;
-      background: #535257 url("../../images/index-background-desktop-cat.jpg") no-repeat top right;
+      right: 0;
+      background: #4e4d52 url("../../images/index-background-desktop-cat.jpg") no-repeat top right;
       z-index: 1;
     }
+
     &::after {
       content: "";
       width: 50%;
       position: absolute;
-      right: 0;
       height: calc(100% + 110px);
       top: -110px;
+      right: 0;
       background-color: $green;
       z-index: 5;
       opacity: 0.85;
@@ -43,17 +44,26 @@
 }
 
 .welcome__wrapper {
-  @media(min-width:$desktop ) {
+  @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
-    padding-right: 655px;
+    padding: 114px 655px 110px 80px;
     box-sizing: border-box;
-    padding-top: 114px;
-    padding-left: 80px;
     min-height: 584px;
-    padding-bottom: 110px;
-  }
+    position: relative;
 
+    &::before {
+      content: "";
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-30%);
+      background: url("../../images/index-can-desktop.png") no-repeat 0 0;
+      z-index: 10;
+    }
+  }
 }
 
 .welcome__block {
@@ -61,7 +71,7 @@
   position: relative;
   margin-bottom: 3px;
 
-  @media(min-width:$tablet ) {
+  @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
   }
@@ -78,10 +88,9 @@
     background: url("../../images/index-can-mobile.png") no-repeat 0 0;
     z-index: 15;
 
-    @media(min-width:$tablet ) {
+    @media (min-width: $tablet) {
       display: none;
     }
-
   }
 }
 
@@ -92,7 +101,7 @@
   position: relative;
   z-index: 1;
 
-  @media(min-width:$tablet ) {
+  @media (min-width: $tablet) {
     background-color: transparent;
     color: #000000;
     padding: 0;
@@ -109,7 +118,7 @@
     left: 0;
     z-index: 5;
 
-    @media(min-width:$tablet ) {
+    @media (min-width: $tablet) {
       display: none;
     }
   }
@@ -125,7 +134,7 @@
     left: 0;
     z-index: 10;
 
-    @media(min-width:$tablet ) {
+    @media (min-width: $tablet) {
       display: none;
     }
   }
@@ -141,7 +150,7 @@
   z-index: 15;
   position: relative;
 
-  @media(min-width:$tablet ) {
+  @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -149,9 +158,8 @@
     margin: 0 0 41px;
   }
 
-  @media(min-width:$desktop ) {
+  @media (min-width: $desktop) {
     margin: 0 0 40px;
-
   }
 }
 
@@ -166,16 +174,15 @@
   z-index: 15;
   position: relative;
 
-  @media(min-width:$tablet ) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     width: auto;
     margin: 0 0 49px;
   }
 
-  @media(min-width:$desktop ) {
+  @media (min-width: $desktop) {
     margin: 0 0 52px;
-
   }
 }
 
@@ -191,7 +198,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  @media(min-width:$tablet ) {
+  @media (min-width: $tablet) {
     display: inline-block;
     margin: 0;
     font-size: 20px;

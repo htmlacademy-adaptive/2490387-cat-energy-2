@@ -1,15 +1,22 @@
 .service {
-  padding-top: 19px;
+  padding: 19px 0 47px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-top: 45px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+    padding-bottom: 0;
   }
 }
 
 .service__title {
   margin-bottom: 40px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: 72px;
   }
 }
@@ -19,15 +26,20 @@
   margin: 0 20px;
   list-style: none;
 
-  @media(min-width: $tablet) {
-    display: flex;
+  @media (min-width: $tablet) {
     flex-wrap: wrap;
-    width: 626px;
-    justify-content: space-between;
-    margin: 0 30px;
-    row-gap: 37px;
+    width: 710px;
+    margin: 0 auto;
+    display: flex;
+    gap: 37px 143px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    gap: 37px 83px;
   }
 }
+
 
 .service__item {
   position: relative;
@@ -64,7 +76,11 @@
     background-image: url("../../images/icon-scales.svg");
   }
 
-  @media(min-width: $tablet) {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
     width: 242px;
     min-height: 280px;
     padding-left: 0;
@@ -85,8 +101,8 @@
       line-height: 280px;
       color: #f2f2f2;
       position: absolute;
-      right: -7px;
       top: -39px;
+      right: -7px;
       width: 134px;
       text-align: left;
     }
@@ -121,17 +137,15 @@
   padding: 0;
   margin: 0;
   font-family: $lato;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     position: relative;
     z-index: 5;
-
   }
-
 }
