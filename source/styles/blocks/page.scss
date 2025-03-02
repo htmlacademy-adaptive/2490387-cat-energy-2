@@ -1,4 +1,32 @@
 .page__body {
   margin: 0;
   font-family: $oswald;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    &--index {
+      &::before {
+        content: "";
+        width: 50%;
+        height: 600px;
+        background-color: #4e4d52;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      &::after {
+        content: "";
+        width: 50%;
+        height: 600px;
+        background-color: $green;
+        opacity: 0.85;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
 }
