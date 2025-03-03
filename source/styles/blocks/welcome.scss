@@ -8,7 +8,14 @@
     margin: 0 auto;
     padding: 54px 62px 526px 90px;
     box-sizing: border-box;
-    background: url("../../images/index-can-tablet.jpg") no-repeat center bottom;
+    background-image:
+      image-set(
+        url("../../images/index-can-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/index-can-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/index-can-tablet@1x.jpg") type("image/png") 1x,
+        url("../../images/index-can-tablet@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
 
   @media (min-width: $desktop) {
@@ -25,7 +32,15 @@
       height: calc(100% + 110px);
       top: -110px;
       right: 0;
-      background: #4e4d52 url("../../images/index-background-desktop-cat.jpg") no-repeat top right;
+      background-color: #4e4d52;
+      background-image:
+        image-set(
+          url("../../images/index-background-cat-d@1x.webp") type("image/webp") 1x,
+          url("../../images/index-background-cat-d@2x.webp") type("image/webp") 2x,
+          url("../../images/index-background-cat-d@1x.jpg") type("image/jpg") 1x,
+          url("../../images/index-background-cat-d@2x.jpg") type("image/jpg") 2x);
+      background-repeat: no-repeat;
+      background-position: top right;
       z-index: 1;
     }
 
@@ -60,7 +75,14 @@
       top: 32px;
       left: 50%;
       transform: translateX(-30%);
-      background: url("../../images/index-can-desktop.png") no-repeat 0 0;
+      background-image:
+        image-set(
+          url("../../images/index-can-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index-can-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index-can-desktop@1x.jpg") type("image/png") 1x,
+          url("../../images/index-can-desktop@2x.jpg") type("image/png") 2x);
+      background-repeat: no-repeat;
+      background-position: 0 0;
       z-index: 10;
     }
   }
@@ -85,7 +107,14 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../../images/index-can-mobile.png") no-repeat 0 0;
+    background-image:
+      image-set(
+        url("../../images/index-can-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/index-can-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/index-can-mobile@1x.jpg") type("image/png") 1x,
+        url("../../images/index-can-mobile@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-position: 0 0;
     z-index: 15;
 
     @media (min-width: $tablet) {
@@ -111,7 +140,16 @@
     content: "";
     height: 100%;
     width: 100%;
-    background: url("../../images/index-background-desktop.jpg") no-repeat center top;
+    background-color: #4e4d52;
+    background-image:
+      image-set(
+        url("../../images/index-background-cat-m@1x.webp") type("image/webp") 1x,
+        url("../../images/index-background-cat-m@2x.webp") type("image/webp") 2x,
+        url("../../images/index-background-cat-m@1x.jpg") type("image/jpg") 1x,
+        url("../../images/index-background-cat-m@2x.jpg") type("image/jpg") 2x);
+    background-repeat: no-repeat;
+    background-position: center top;
+
     background-size: auto 100%;
     position: absolute;
     top: 0;
